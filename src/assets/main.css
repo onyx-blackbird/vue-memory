@@ -40,7 +40,8 @@ select, button {
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
 }
-.card.turned .flip-card-inner {
+.card.turned .flip-card-inner,
+.card.matched .flip-card-inner {
 	transform: rotateY(180deg);
   }
   
@@ -67,9 +68,6 @@ select, button {
 }
 .flip-card-back {
 	transform: rotateY(180deg);
-}
-.card.matched .flip-card-back {
-	backface-visibility: visible;
 }
 .score {
 	line-height: 20px;

@@ -48,10 +48,9 @@ const onClick = (card: ICard): void => {
 <template>
 	<p>Match two pictures</p>
 	<div class="score">
-		<p>Turns: {{ turns }}</p>
-		<p>Matches found: {{ matchedCards.length/2 }}</p>
+		<span>Turns: {{ turns }} | Matches found: {{ matchedCards.length/2 }}</span>
+		<span v-if="isGameOver" class="game-over">COMPLETED</span>
 	</div>
-	<div v-if="isGameOver" class="game-over">GAME OVER</div>
 	<div class="grid">
 		<ImageCard v-for="(card, index) in cards" :key="index"
 			:card="card"
