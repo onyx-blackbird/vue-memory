@@ -5,7 +5,7 @@ import Card, { ICard } from '@/model/Card';
 
 const RNG = seedrandom();
 
-const IMAGES = ["beach", "berries", "castle", "citynight", "deer", "dusk", "fall", "forest", "island", "leaves", "manta", "mountain", "mountainrange", "orbit", "peak", "plains", "sailboats", "town", "windmill", "wintertown"];
+const IMAGES = ["beach", "castle", "deer", "dusk", "fall", "forest", "island", "manta", "mountain", "mountainrange", "orbit", "peak", "pier", "plains", "sailboats", "storm", "sunset", "town", "windmill", "wintertown"];
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
